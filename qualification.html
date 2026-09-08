@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="Document.html" onsubmit="saveQualification()">
+        <header>
+            <nav class="navbar">
+                <div class="logo">JS</div>
+                <ul class="navlinks">
+                    <li><a href="index.html">Personal Details</a></li>
+                    <li><a href="qualification.html" class="active">Qualification</a></li>
+                    <li><a href="Document.html">Documents</a></li>
+                    <li><a href="preview.html">Preview</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="form-container">
+            <h2>Enter your qualification details</h2>
+            <br><br>
+            <label>High School Name :</label>
+            <input type="text" placeholder="School Name.." id="highschool" required>
+            <br><br>
+            <label>High School Marks :</label>
+            <input type="number" max="100" min="0" step="0.01" placeholder="Percentage " required id="highmarks">%
+            <br><br>
+            <label>Secondary School Name :</label>
+            <input type="text" placeholder="School Name.." id="secondaryschool"   required>
+            <br><br>
+            <label>High School Marks :</label>
+            <input type="number" min="0" max="100" step="0.1" placeholder="Percentage " required id="secondarymarks">%
+            <br><br>
+            <label>Choose the Course : </label>
+            <select id="course"  >
+                <option>B.TECH</option>
+                <option>B.C.A</option>
+                <option>B.S.C</option>
+                <option>PHARMACY</option>
+                <option>B.A.</option>
+            </select>
+            <br><br>
+            <label>Choose University : </label>
+            <select id="university">
+                <option>Panjab University</option>
+                <option>Punjabi University</option>
+                <option>Punjab Technical University</option>
+                <option>Chandigarh University</option>
+                <option>Guru Nanak Dev University</option>
+            </select>
+            <br><br>
+            <label>Year of passing : </label>
+            <input type="number" min="2018" max="2026" id="passingyear"  required>
+            <br><br>
+            <div class="button_group2">
+                <a href="index.html"> <button type="button" class="back_btn">Previous</button> </a>
+                <button class="next_btn" type="submit">Next</button>
+            </div>
+    </form>
+    </div>
+    <footer>
+         <p>© 2026 JS Student Portal. All Right Reserved </p>
+            <p>Designed with 💖</p>
+    </footer>
+    <script  src="my.js"></script>
+</body>
+
+</html>

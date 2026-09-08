@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="qualification.html" onsubmit="savePersonal()">
+        <header>
+            <nav class="navbar">
+                <div class="logo">JS</div>
+                <ul class="navlinks">
+                    <li><a href="index.html" class="active">Personal Details</a></li>
+                    <li><a href="qualification.html">Qualification</a></li>
+                    <li><a href="Document.html">Documents</a></li>
+                    <li><a href="preview.html">Preview</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="form-container">
+            <h1>Fill your personal details</h1>
+            <br>
+            <label>Name: </label>
+            <input type="text" id="name" placeholder="Enter your name... " required>
+            <br><br>
+            <label>Father Name: </label>
+            <input type="text" id="father" placeholder="Enter your Father name... " required>
+            <br><br>
+            <label>Mother Name: </label>
+            <input type="text" id="mother" placeholder="Enter your Mother name" required > 
+            <br><br>
+            <label>Date of Birth : </label>
+            <input type=" date" id="dob" required placeholder="MM/DD/YYYY">
+            <br><br>
+            <label>Gender:</label>
+
+            <span class="radio-group">
+                <label><input type="radio" name="gen" value="male"> Male</label>
+                <label><input type="radio" name="gen" value="female"> Female</label>
+            </span>
+            <br><br>
+            <label>Phone :</label>
+            <input type="tel" id="phone" placeholder="Enter 10 digits phone No. " required maxlength="10" pattern="\d{10}"
+                title="Enter 10 digits">
+            <br><br>
+            <label>E-mail :</label>
+            <input type="email" id="email" required placeholder="kirat123@gamil.com">
+            <br><br>
+            <label>Adhhar No. :</label>
+            <input type="text" id="adhar" required maxlength="12" pattern="\d{12}" title="Enter valid Adhaar Number " placeholder="Enter Adhaar Number ">
+            <br><br>
+            <label>State :</label>
+            <input type="text" id="state" required placeholder="Enter State">
+            <br><br>
+            <label>City :</label>           
+            <input type="text" id="city" required placeholder="Enter City">
+            <br><br>
+            <label>Pincode :</label>
+            <input type="text" id="pincode" required placeholder="Enter Pincode "> 
+            <br><br>
+            <br><br>
+            <div class="button_group1">
+                <button class="next_btn" type="submit">Next</button>
+            </div>
+        </div>
+        <footer>
+            <p>© 2026 JS Student Portal. All Right Reserved </p>
+            <p>Designed with 💖</p>
+        </footer>
+    </form>
+<script src="my.js"></script>
+</body>
+
+</html>

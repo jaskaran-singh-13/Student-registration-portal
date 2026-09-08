@@ -1,0 +1,46 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="preview.html"  onsubmit="saveDocuments()">
+        <header>
+            <nav class="navbar">
+                <div class="logo">JS</div>
+                <ul class="navlinks">
+                    <li><a href="index.html">Personal Details</a></li>
+                    <li><a href="qualification.html">Qualification</a></li>
+                    <li><a href="Document.html" class="active">Documents</a></li>
+                    <li><a href="preview.html">Preview</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="form-container" >
+            <h2>Upload Your Documents </h2>
+            <br><br>
+            <label>Candiate Image:</label>
+            <input type="file" id="photo">
+            <br><br>
+            <label>Signature Image:</label>
+            <input type="file" id="sign">
+            <br><br>
+            <label>About Yourself :</label>
+            <textarea class="about" id="about"></textarea>
+            <br><br>
+            <div class="button_group2">
+                <a href="qualification.html"> <button type="button" class="back_btn">Previous</button> </a>
+                <button class="next_btn" type="submit">Next</button>
+            </div>
+    </form>
+    </div>
+    <footer>
+         <p>© 2026 JS Student Portal. All Right Reserved </p>
+            <p>Designed with 💖</p>
+    </footer>
+ <script  src="my.js"></script>
+</body>
+
+</html>
